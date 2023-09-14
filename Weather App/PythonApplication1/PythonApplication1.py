@@ -7,7 +7,7 @@ import requests
 #api_file=weather.key
 #file_a=configParser()
 #file_a.read(api_file)
-#api_key=file_a["api_key"]["key"]
+#api_key=file_a["api_key"]["key"]         
 def weather_find(city):
     final=requests.get(url_api.format(city,api_key))
     if final:
